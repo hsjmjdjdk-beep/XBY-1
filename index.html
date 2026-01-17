@@ -55,11 +55,15 @@ src="https://www.facebook.com/tr?id=701642666216234&ev=PageView&noscript=1"
             .card-hover {
                 @apply hover:shadow-lg hover:-translate-y-1 transition-all duration-300;
             }
+            /* 为contactButton添加基础样式，贴合页面风格 */
+            #contactButton {
+                @apply bg-secondary hover:bg-secondary/90 text-white font-bold py-2 px-6 rounded-lg shadow-md hover:shadow-lg transition-all duration-300;
+            }
         }
     </style>
 </head>
 <body class="bg-light text-dark antialiased">
-    <!-- 导航栏（已移除中文“联系”按钮） -->
+    <!-- 导航栏（整合contactButton按钮） -->
     <header class="sticky top-0 bg-white/90 backdrop-blur-sm shadow-sm z-50">
         <div class="container mx-auto px-4 py-4 flex justify-between items-center">
             <div class="flex items-center gap-2">
@@ -73,8 +77,12 @@ src="https://www.facebook.com/tr?id=701642666216234&ev=PageView&noscript=1"
                 <a href="#contacto" class="btn-whatsapp py-2 px-6 text-base">
                     <i class="fa fa-whatsapp"></i> Añádenos en WhatsApp
                 </a>
+                <!-- 嵌入contactButton按钮（桌面端） -->
+                <button id="contactButton">联系</button>
             </div>
-            <div class="md:hidden">
+            <div class="md:hidden flex items-center gap-4">
+                <!-- 嵌入contactButton按钮（移动端，适配小尺寸） -->
+                <button id="contactButton" class="py-1 px-4 text-sm">联系</button>
                 <button class="text-dark text-2xl">
                     <i class="fa fa-bars"></i>
                 </button>
@@ -309,6 +317,18 @@ src="https://www.facebook.com/tr?id=701642666216234&ev=PageView&noscript=1"
                 header.classList.add('shadow-sm');
             }
         });
+
+        // 整合你提供的contactButton点击事件代码（保留原始结构，预留事件填充位置）
+        document.getElementById('contactButton').addEventListener('click', function() {
+            // insert_event_code_here; （此处可填充具体业务逻辑，示例如下）
+            // 示例1：跳转到WhatsApp联系（贴合页面转化目标）
+            window.open('https://wa.me/85295611357?text=Me gustaría saber sobre acciones de alta calidad con potencial de crecimiento. ¿Podrías recomendarme alguna?', '_blank');
+            // 示例2：弹窗提示
+            // alert('联系按钮已点击，可在此添加自定义逻辑');
+            // 示例3：Facebook Pixel事件追踪
+            // fbq('track', 'ContactRequest');
+            ...
+        }, false);
     </script>
 </body>
 </html>
