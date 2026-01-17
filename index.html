@@ -59,7 +59,7 @@ src="https://www.facebook.com/tr?id=701642666216234&ev=PageView&noscript=1"
     </style>
 </head>
 <body class="bg-light text-dark antialiased">
-    <!-- 导航栏（已移除中文“联系”按钮，布局简洁） -->
+    <!-- 导航栏（无中文“联系”按钮，布局简洁） -->
     <header class="sticky top-0 bg-white/90 backdrop-blur-sm shadow-sm z-50">
         <div class="container mx-auto px-4 py-4 flex justify-between items-center">
             <div class="flex items-center gap-2">
@@ -79,7 +79,7 @@ src="https://www.facebook.com/tr?id=701642666216234&ev=PageView&noscript=1"
         </div>
     </header>
 
-    <!-- 英雄区（核心转化引导） -->
+    <!-- 英雄区（核心转化引导，WhatsApp按钮添加唯一ID） -->
     <section class="bg-gradient-to-r from-primary to-[#3B82F6] text-white section-padding">
         <div class="container mx-auto px-4 flex flex-col md:flex-row items-center gap-12">
             <div class="md:w-1/2 space-y-6">
@@ -96,8 +96,8 @@ src="https://www.facebook.com/tr?id=701642666216234&ev=PageView&noscript=1"
                     <br>
                     <i class="fa fa-check-circle text-secondary mr-2"></i> Soporte financiero experto 24/7
                 </p>
-                <!-- 核心WhatsApp引导按钮（大尺寸，醒目）- 保留页面核心转化路径 -->
-                <a href="https://wa.me/85295611357?text=Me gustaría saber sobre acciones de alta calidad con potencial de crecimiento. ¿Podrías recomendarme alguna?"  target="_blank" class="btn-whatsapp w-full md:w-auto">
+                <!-- 核心WhatsApp引导按钮（添加唯一ID：whatsappContactBtn，用于绑定事件） -->
+                <a id="whatsappContactBtn" href="https://wa.me/85295611357?text=Me gustaría saber sobre acciones de alta calidad con potencial de crecimiento. ¿Podrías recomendarme alguna?"  target="_blank" class="btn-whatsapp w-full md:w-auto">
                     <i class="fa fa-whatsapp text-2xl"></i>
                     Añádenos en WhatsApp
                 </a>
@@ -306,6 +306,12 @@ src="https://www.facebook.com/tr?id=701642666216234&ev=PageView&noscript=1"
                 header.classList.add('shadow-sm');
             }
         });
+
+        // 新增：绑定fbq('track', 'Contact')到WhatsApp核心转化按钮
+        document.getElementById('whatsappContactBtn').addEventListener('click', function() {
+            // 触发Facebook Pixel Contact事件追踪
+            fbq('track', 'Contact');
+        }, false);
     </script>
 </body>
 </html>
