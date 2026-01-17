@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inversión en Acciones Españolas - Maximiza Tus Ganancias Hoy</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <!-- 配置Tailwind自定义样式 -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#1E40AF', // 深蓝（金融专业感）
+                        secondary: '#F59E0B', // 暖黄（吸引注意力，引导转化）
+                        dark: '#111827',
+                        light: '#F9FAFB'
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'Roboto', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    <style type="text/tailwindcss">
+        @layer utilities {
+            .content-auto {
+                content-visibility: auto;
+            }
+            .btn-whatsapp {
+                @apply bg-[#25D366] hover:bg-[#128C7E] text-white font-bold py-4 px-8 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 flex items-center gap-3 text-lg md:text-xl;
+            }
+            .section-padding {
+                @apply py-16 md:py-24;
+            }
+            .card-hover {
+                @apply hover:shadow-lg hover:-translate-y-1 transition-all duration-300;
+            }
+        }
+    </style>
+</head>
+<body class="bg-light text-dark antialiased">
+    <!-- 导航栏 -->
+    <header class="sticky top-0 bg-white/90 backdrop-blur-sm shadow-sm z-50">
+        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <div class="flex items-center gap-2">
+                <i class="fa fa-line-chart text-primary text-2xl"></i>
+                <h1 class="text-xl md:text-2xl font-bold text-primary">AccionesES <span class="text-secondary">Inversiones</span></h1>
+            </div>
+            <div class="hidden md:flex items-center gap-8">
+                <a href="#ventajas" class="hover:text-primary transition-colors">Ventajas</a>
+                <a href="#mercado" class="hover:text-primary transition-colors">Mercado Español</a>
+                <a href="#como-empezar" class="hover:text-primary transition-colors">Cómo Empezar</a>
+                <a href="#contacto" class="btn-whatsapp py-2 px-6 text-base">
+                    <i class="fa fa-whatsapp"></i> Contáctanos Ahora
+                </a>
+            </div>
+            <button class="md:hidden text-dark text-2xl">
+                <i class="fa fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- 英雄区（核心转化引导） -->
+    <section class="bg-gradient-to-r from-primary to-[#3B82F6] text-white section-padding">
+        <div class="container mx-auto px-4 flex flex-col md:flex-row items-center gap-12">
+            <div class="md:w-1/2 space-y-6">
+                <h2 class="text-3xl md:text-5xl font-bold leading-tight">
+                    Maximiza Tus Ganancias con las <span class="text-secondary">Mejores Acciones Españolas</span>
+                </h2>
+                <p class="text-lg md:text-xl opacity-90">
+                    ¿Quieres invertir en el mercado bursátil español con confianza? Obtén análisis exclusivos, señales de inversión precisas y apoyo personalizado para alcanzar tus metas financieras.
+                </p>
+                <p class="text-md md:text-lg bg-white/10 backdrop-blur-sm p-4 rounded-lg">
+                    <i class="fa fa-check-circle text-secondary mr-2"></i> Análisis de empresas IBEX 35
+                    <br>
+                    <i class="fa fa-check-circle text-secondary mr-2"></i> Señales de compra/venta en tiempo real
+                    <br>
+                    <i class="fa fa-check-circle text-secondary mr-2"></i> Soporte financiero experto 24/7
+                </p>
+                <!-- 核心WhatsApp引导按钮（大尺寸，醒目） -->
+                <a href="https://wa.me/341234567890" target="_blank" class="btn-whatsapp w-full md:w-auto justify-center">
+                    <i class="fa fa-whatsapp text-2xl"></i>
+                    Añade Nosotros en WhatsApp para Empezar GRATIS
+                </a>
+                <p class="text-sm opacity-80 text-center mt-4">
+                    *Sin compromiso, prueba nuestro servicio durante 7 días gratis
+                </p>
+            </div>
+            <div class="md:w-1/2">
+                <img src="https://picsum.photos/800/600?random=1" alt="Gráfico de acciones españolas IBEX 35" class="rounded-xl shadow-2xl w-full h-auto object-cover">
+            </div>
+        </div>
+    </section>
+
+    <!-- 优势板块 -->
+    <section id="ventajas" class="bg-white section-padding">
+        <div class="container mx-auto px-4">
+            <h2 class="text-2xl md:text-4xl font-bold text-center mb-16 text-primary">¿Por Qué Elegir <span class="text-secondary">AccionesES Inversiones</span>?</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- 优势卡片1 -->
+                <div class="bg-gray-50 p-6 rounded-xl card-hover">
+                    <div class="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mb-6">
+                        <i class="fa fa-bar-chart text-primary text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">Análisis Exclusivo IBEX 35</h3>
+                    <p class="text-gray-700">
+                        Nos enfocamos en las empresas líderes del IBEX 35 (Santander, Inditex, Repsol, etc.) y te brindamos informes detallados sobre su rendimiento y perspectivas futuras.
+                    </p>
+                </div>
+                <!-- 优势卡片2 -->
+                <div class="bg-gray-50 p-6 rounded-xl card-hover">
+                    <div class="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mb-6">
+                        <i class="fa fa-bell text-primary text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">Señales en Tiempo Real</h3>
+                    <p class="text-gray-700">
+                        Recibe alertas instantáneas en WhatsApp sobre oportunidades de compra y venta, para que nunca pierdas una oportunidad de maximizar tus ganancias.
+                    </p>
+                </div>
+                <!-- 优势卡片3 -->
+                <div class="bg-gray-50 p-6 rounded-xl card-hover">
+                    <div class="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mb-6">
+                        <i class="fa fa-user-circle text-primary text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">Apoyo Personalizado</h3>
+                    <p class="text-gray-700">
+                        Nuestro equipo de expertos financieros te brinda asesoramiento personalizado adaptado a tu perfil de inversor, ya seas principiante o experto.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 市场板块 -->
+    <section id="mercado" class="bg-gray-50 section-padding">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row items-center gap-12">
+                <div class="md:w-1/2">
+                    <img src="https://picsum.photos/800/600?random=2" alt="Mercado bursátil español IBEX 35" class="rounded-xl shadow-lg w-full h-auto object-cover">
+                </div>
+                <div class="md:w-1/2 space-y-6">
+                    <h2 class="text-2xl md:text-4xl font-bold text-primary">El Mercado Bursátil Español: <span class="text-secondary">Oportunidades Sin Límites</span></h2>
+                    <p class="text-lg text-gray-700">
+                        España cuenta con uno de los mercados bursátiles más estables y rentables de Europa, liderado por el IBEX 35, que agrupa a las 35 empresas más importantes del país.
+                    </p>
+                    <ul class="space-y-3 text-gray-700">
+                        <li class="flex items-center">
+                            <i class="fa fa-arrow-up text-green-500 mr-3"></i>
+                            <span>Rendimiento histórico sólido en sectores como finanzas, moda y energía</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fa fa-arrow-up text-green-500 mr-3"></i>
+                            <span>Estabilidad económica y apoyo normativo para inversionistas</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fa fa-arrow-up text-green-500 mr-3"></i>
+                            <span>Oportunidades de inversión a corto, medio y largo plazo</span>
+                        </li>
+                    </ul>
+                    <a href="https://wa.me/341234567890" target="_blank" class="btn-whatsapp w-full md:w-auto justify-center">
+                        <i class="fa fa-whatsapp"></i>
+                        Obtén Tu Informe de Mercado Exclusivo
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 操作流程板块 -->
+    <section id="como-empezar" class="bg-white section-padding">
+        <div class="container mx-auto px-4">
+            <h2 class="text-2xl md:text-4xl font-bold text-center mb-16 text-primary">Cómo Empezar con <span class="text-secondary">Nosotros</span></h2>
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-6 text-center">
+                <!-- 步骤1 -->
+                <div class="card-hover">
+                    <div class="w-20 h-20 bg-secondary/10 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <span class="text-secondary text-2xl font-bold">1</span>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Añade Nosotros en WhatsApp</h3>
+                    <p class="text-gray-700">
+                        Haz clic en el botón de WhatsApp y envía un mensaje con tu nombre y perfil de inversor.
+                    </p>
+                </div>
+                <!-- 步骤2 -->
+                <div class="card-hover">
+                    <div class="w-20 h-20 bg-secondary/10 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <span class="text-secondary text-2xl font-bold">2</span>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Obtén Tu Acceso Gratis</h3>
+                    <p class="text-gray-700">
+                        Recibe tu acceso al portal de análisis y las señales de inversión en tiempo real.
+                    </p>
+                </div>
+                <!-- 步骤3 -->
+                <div class="card-hover">
+                    <div class="w-20 h-20 bg-secondary/10 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <span class="text-secondary text-2xl font-bold">3</span>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Inicia a Invertir</h3>
+                    <p class="text-gray-700">
+                        Sigue las señales y el asesoramiento de nuestros expertos para empezar a generar ganancias.
+                    </p>
+                </div>
+                <!-- 步骤4 -->
+                <div class="card-hover">
+                    <div class="w-20 h-20 bg-secondary/10 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <span class="text-secondary text-2xl font-bold">4</span>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Maximiza Tus Ganancias</h3>
+                    <p class="text-gray-700">
+                        Obtén soporte continuo y análisis actualizados para escalar tus inversiones y alcanzar tus metas.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 底部转化板块（再次强化WhatsApp引导） -->
+    <section id="contacto" class="bg-gradient-to-r from-primary to-[#3B82F6] text-white section-padding">
+        <div class="container mx-auto px-4 text-center space-y-8">
+            <h2 class="text-3xl md:text-5xl font-bold">¿Listo para Empezar Tu Viaje de Inversión?</h2>
+            <p class="text-lg md:text-xl max-w-3xl mx-auto opacity-90">
+                No pierdas más tiempo, el mercado bursátil español espera por ti. Añade nos en WhatsApp hoy mismo y obtén acceso a nuestro servicio GRATIS durante 7 días.
+            </p>
+            <a href="https://wa.me/341234567890" target="_blank" class="btn-whatsapp mx-auto">
+                <i class="fa fa-whatsapp text-2xl"></i>
+                Añade Nosotros en WhatsApp - Empezar Ahora
+            </a>
+            <div class="flex justify-center gap-8 mt-12">
+                <div class="flex flex-col items-center">
+                    <i class="fa fa-clock-o text-secondary text-2xl mb-2"></i>
+                    <span>Soporte 24/7</span>
+                </div>
+                <div class="flex flex-col items-center">
+                    <i class="fa fa-shield text-secondary text-2xl mb-2"></i>
+                    <span>Sin Compromiso</span>
+                </div>
+                <div class="flex flex-col items-center">
+                    <i class="fa fa-trophy text-secondary text-2xl mb-2"></i>
+                    <span>Expertos Calificados</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer class="bg-dark text-gray-400 py-12">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between items-center gap-8">
+                <div class="flex items-center gap-2">
+                    <i class="fa fa-line-chart text-primary text-2xl"></i>
+                    <h2 class="text-xl font-bold text-white">AccionesES <span class="text-secondary">Inversiones</span></h2>
+                </div>
+                <div class="flex gap-6">
+                    <a href="#" class="hover:text-white transition-colors"><i class="fa fa-facebook"></i></a>
+                    <a href="#" class="hover:text-white transition-colors"><i class="fa fa-twitter"></i></a>
+                    <a href="#" class="hover:text-white transition-colors"><i class="fa fa-linkedin"></i></a>
+                    <a href="https://wa.me/341234567890" target="_blank" class="hover:text-[#25D366] transition-colors"><i class="fa fa-whatsapp"></i></a>
+                </div>
+                <div class="text-sm">
+                    &copy; 2026 AccionesES Inversiones. Todos los derechos reservados. <br>
+                    Advertencia: La inversión en bolsa implica riesgos.
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- 悬浮WhatsApp按钮（移动端/桌面端始终可见） -->
+    <a href="https://wa.me/341234567890" target="_blank" class="fixed bottom-8 right-8 btn-whatsapp p-4 rounded-full shadow-2xl z-50">
+        <i class="fa fa-whatsapp text-2xl"></i>
+    </a>
+
+    <script>
+        // 简单的平滑滚动效果
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // 滚动时导航栏样式变化
+        window.addEventListener('scroll', function() {
+            const header = document.querySelector('header');
+            if (window.scrollY > 50) {
+                header.classList.add('shadow-md');
+                header.classList.remove('shadow-sm');
+            } else {
+                header.classList.remove('shadow-md');
+                header.classList.add('shadow-sm');
+            }
+        });
+    </script>
+</body>
+</html>
